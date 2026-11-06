@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+#mobile-open-button.open .hamburger-line:first-child {
+  transform: translateY(10px) rotate(45deg);
+}
+
+#mobile-open-button.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-open-button.open .hamburger-line:last-child {
+  transform: translateY(-10px) rotate(-45deg);
+}
+@custom-variant widescreen (@media (min-aspect-ratio: 3/2));
+@custom-variant tallscreen (@media (max-aspect-ratio: 1/2));
+
+@utility section-min-height{
+  min-height: calc(100vh-68px);
+}
